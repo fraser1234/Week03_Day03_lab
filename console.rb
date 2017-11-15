@@ -44,6 +44,7 @@ album1_2.save
 album2_2.save
 
 result = Album.all
+result2 = Artist.all
 
 binding.pry
 nil

@@ -23,7 +23,7 @@ attr_reader :id, :title, :artist_id
   def self.all
     sql = "SELECT * FROM albums"
     result = SqlRunner.run(sql)
-    albums = result.map{ |album| Album.new(album) }
+    return result.map{ |album| Album.new(album) }
   end
 
 
