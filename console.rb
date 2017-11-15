@@ -54,5 +54,8 @@ result3 = artist2.list_albums
 
 result4 = album2_2.list_artist
 
+album2_1.genre = 'Rock'
+album2_1.update
+
 binding.pry
 nil
