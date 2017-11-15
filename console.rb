@@ -13,11 +13,13 @@ artist1.save
 
 album1_1 = Album.new( {
   'title' => 'Purple Rain',
+  'genre' => 'Awesome',
   'artist_id' => artist1.id
   } )
 
 album2_1 = Album.new( {
   'title' => 'Soul',
+  'genre' => 'Awesome',
   'artist_id' => artist1.id
   } )
 
@@ -32,11 +34,13 @@ artist2.save
 
 album1_2 = Album.new({
   'title' => '80s',
+  'genre' => 'Soul',
   'artist_id' => artist2.id
   } )
 
 album2_2 = Album.new({
   'title' => 'Pish',
+  'genre' => 'Disco',
   'artist_id' => artist2.id
   })
 
@@ -45,6 +49,10 @@ album2_2.save
 
 result = Album.all
 result2 = Artist.all
+
+result3 = artist2.list_albums
+
+result4 = album2_2.list_artist
 
 binding.pry
 nil
